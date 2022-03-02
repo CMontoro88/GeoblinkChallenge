@@ -1,7 +1,7 @@
 {
-  "name": "geoblink-fe-vue",
+  "name": "multiselect",
   "version": "1.0.0",
-  "description": "A Frontend exercise for Geoblink using Vue.js",
+  "description": "Multiselect component made with vue",
   "author": "CARLOS MONTORO <CMONTOROV@GMAIL.COM>",
   "private": true,
   "scripts": {

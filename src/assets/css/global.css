@@ -9,9 +9,6 @@
 * {
   box-sizing: border-box;
 }
-h1 {
-  font-weight: normal;
-}
 
 /* Fade animation */
 .fade-enter-active, .fade-leave-active {

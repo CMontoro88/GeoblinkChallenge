@@ -1,6 +1,5 @@
 <template>
   <div class="main">
-    <h1>Geoblink Frontend Exercise</h1>
     <div class="main__output-result">
       Selected States on parent component:
       <div v-if="selectedStates.length > 0">
