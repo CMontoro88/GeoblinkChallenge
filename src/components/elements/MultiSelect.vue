@@ -29,7 +29,7 @@
           @focus="openOptions"
           @blur="closeOptions"
           @keydown="openOptions"
-          :placeholder="placeHolderText"
+          :placeholder="placeholder"
         />
       </div>
       <div
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="options-box__option--empty-state" v-else>
-          {{ noResultsText }}
+          {{ noResults }}
         </div>
       </div>
     </transition>
@@ -82,8 +82,8 @@
 export default {
   props: {
     options: { type: Array, required: true },
-    placeholder: { type: String, required: false },
-    noResults: { type: String, required: false }
+    placeholder: { type: String, required: false, default: 'Type here to filter' },
+    noResults: { type: String, required: false, default: 'No results' }
   },
   name: 'MultiSelect',
   data () {
@@ -95,12 +95,6 @@ export default {
     }
   },
   computed: {
-    placeHolderText () {
-      return this.placeholder || 'Type here to filter'
-    },
-    noResultsText () {
-      return this.noResults || 'No results'
-    },
     selectOptions () {
       return this.options.map(option => {
         return { ...option }
